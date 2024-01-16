@@ -1,0 +1,16 @@
+[features]
+seeds = false
+[programs.localnet]
+solmate_presale = "HXbR9vT3guUKtip1Z88R3hxRNpEaScV97fwn8nYsL54D"
+[programs.devnet]
+solmate_presale = "HXbR9vT3guUKtip1Z88R3hxRNpEaScV97fwn8nYsL54D"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/sadao/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
